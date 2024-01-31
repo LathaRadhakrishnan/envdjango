@@ -4,7 +4,14 @@ from django.shortcuts import render
 # helloworldapp/views.py
 
 from django.http import HttpResponse
+from django.conf import settings
 
 def hello_world(request):
-    return HttpResponse("Hello, World!")
+    name = settings.NAME
+    return HttpResponse(f"Your name is : {name}")
+
+
+
+
+
 
