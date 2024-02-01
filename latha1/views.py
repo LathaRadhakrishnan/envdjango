@@ -9,6 +9,7 @@ from django.conf import settings
 def hello_world(request):
     name = settings.NAME
     return HttpResponse(f"Your name is : {name}")
+    return HttpResponse("Hello, World!")
 
 
 
