@@ -1,10 +1,8 @@
-# HelloWorldApp/tests.py
+"""
+    Class description: This is a test class for the latha module.
+"""
 from django.test import TestCase
 from django.urls import reverse
-"""
-Module description: This module contains tests for the latha module.
-"""
-
 class HelloWorldViewTest(TestCase):
     """
     Class description: This is a test class for the latha module.
@@ -30,7 +28,3 @@ class HelloWorldIntegrationTest(TestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Hello, World!")
-
-
-
-
