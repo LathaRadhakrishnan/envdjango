@@ -22,10 +22,9 @@ class HelloWorldIntegrationTest(TestCase):
     """
     def test_hello_world_url(self):
         """
-        Function description: This is a test function within the unit TestClass.
+        Functino description: This is a test function within the unit TestClass.
         """
         url = reverse('hello_world')
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Hello, World!")
-        
